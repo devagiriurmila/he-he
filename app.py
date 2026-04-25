@@ -25,6 +25,8 @@ def add_student():
     
     return jsonify(student)
 
+
+
 @app.route('/students/<int:sid>', methods=['DELETE'])
 def delete_student(sid):
     global students
